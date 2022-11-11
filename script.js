@@ -14,6 +14,9 @@ var games_n = 10;
 // number of games played - initialise
 var total_games = 0;
 
+// nothing to see here
+var lost = 0;
+
 // random generator function from mdn web docs
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -36,14 +39,24 @@ for (i = 1; i <= games_n; i++) {
         if (result === win_con[j]) {
             stats[0] += 1;
             alert("Win!");
+            lost = 1;
         }
     }
 
     // check if player drew
     if (user_input === comp_move) {
         stats[1] += 1;
-        alert("draw!");
+        alert("Tied!");
+        lost = 1;
     }
+
+    // loss alert
+    if (lost === 0) {
+        alert("Lost!")
+    }
+
+    // nothing to see here
+    lost = 0;
 
     // count number of games played
     total_games = ++total_games;
