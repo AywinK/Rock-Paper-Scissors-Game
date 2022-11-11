@@ -7,7 +7,6 @@ var win_con = ["rs", "sp", "pr"];
 
 // create wins/draws/losses counter variable - initialised to 0
 var stats = [0, 0, 0];
-console.log(stats);
 
 // number of games to be played
 var games_n = 10;
@@ -31,22 +30,17 @@ for (i = 1; i <= games_n; i++) {
 
     // merge user input with computer's move
     var result = user_input + comp_move;
-    console.log(result);
 
     // check if player won
     for (j = 0; j < win_con.length; j++) {
         if (result === win_con[j]) {
             stats[0] += 1;
-            console.log(stats);
-            console.log("win");
         }
     }
 
     // check if player drew
     if (user_input === comp_move) {
         stats[1] += 1;
-        console.log(stats);
-        console.log("draw");
     }
 
     // count number of games played
@@ -64,10 +58,6 @@ stats[2] = total_games - stats[0] - stats[1];
 
 // show stats
 stats_end = ("      wins: " + stats[0] + "      ties: " + stats[1] + "      losses: " + stats[2]);
-// to dev console
-console.log (stats_end);
+
 // to end user
 alert(stats_end);
-
-
-console.log(total_games);
