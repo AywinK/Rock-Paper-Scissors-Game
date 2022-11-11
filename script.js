@@ -35,12 +35,14 @@ for (i = 1; i <= games_n; i++) {
     for (j = 0; j < win_con.length; j++) {
         if (result === win_con[j]) {
             stats[0] += 1;
+            alert("Win!");
         }
     }
 
     // check if player drew
     if (user_input === comp_move) {
         stats[1] += 1;
+        alert("draw!");
     }
 
     // count number of games played
