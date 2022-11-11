@@ -1,7 +1,4 @@
 
-// prompt user for input choice
-// var user_input = prompt("r, p, s");
-
 // array of computer's choices
 var comp_choice = ["r", "p", "s"];
 
@@ -74,77 +71,3 @@ alert(stats_end);
 
 
 console.log(total_games);
-
-
-
-
-
-// unlooped old new code
-
-// // computer's choice
-// comp_move = comp_choice[getRandomInt(win_con.length)];
-
-// // merge user input, ui, with computer choice
-// var result = user_input + comp_move;
-// console.log(result);
-
-// // check if player won
-// for (i = 0; i < win_con.length; i++) {
-//     if (result === win_con[i]) {
-//         stats[0] += 1;
-//         console.log(stats);
-//     }
-
-// }
-
-// // check if player drew
-// if (user_input === comp_move) {
-//     stats[1] += 1;
-//     console.log(stats);
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// old random code
-
-// compare merged result, r, with  winning conditions in a for loop
-// for ( i = 0; i < wc.length; i++) {
-//     console.log("for loop work")
-//     console.log(wc[i])
-//     if (r == wc[i]) {
-//         console.log("if works");
-//         alert("you win");
-//     }
-
-//     else if (ui === cc) {
-//     console.log(r);
-//     alert("draw");
-//     }
-
-//     else {
-//         console.log("else works");
-//         alert("you lose")
-//     }
-// }
-
-//
-
-    // else if ( ui === cc) {
-    //     stats[1] += 1;
-    //     console.log(stats[1]);
-    // }
-    // else {
-    //     stats[2] += 1;
-    //     console.log(stats[2]);
-    // }
